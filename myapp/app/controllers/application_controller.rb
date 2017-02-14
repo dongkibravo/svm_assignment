@@ -5,5 +5,5 @@ class ApplicationController < ActionController::Base
 
   registration_ids= ["doikMFq2WfU:APA91bEcP3KXDX27DWJXh-e03wJUdSW-yudeqAoy9u1NbRbZklPm43rZrAQZsLUwBM6-Fp3_-0428rpNyxCfea6mp5gd9Q3S4Py2AVhetRShoWBE3AD9kMOuxCcxQDQZx6QUptI3YUc-"] # an array of one or more client registration tokens
   options = {data: {score: "123"}, collapse_key: "updated_score"}
-  response = fcm.send(registration_ids, options)
+  fcm.send(registration_ids, options)
 end
