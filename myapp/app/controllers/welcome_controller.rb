@@ -1,6 +1,4 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
-
+class WelcomeController < ApplicationController
   fcm = FCM.new("AIzaSyA5gF4_bnQFVCilP3IDjUKKoWlIvAVf6o8")
 
   registration_ids= ["doikMFq2WfU:APA91bEcP3KXDX27DWJXh-e03wJUdSW-yudeqAoy9u1NbRbZklPm43rZrAQZsLUwBM6-Fp3_-0428rpNyxCfea6mp5gd9Q3S4Py2AVhetRShoWBE3AD9kMOuxCcxQDQZx6QUptI3YUc-"] # an array of one or more client registration tokens
